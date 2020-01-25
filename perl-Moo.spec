@@ -3,7 +3,6 @@
 %bcond_without	tests		# do not perform "make test"
 #
 %define		pdir	Moo
-%include	/usr/lib/rpm/macros.perl
 Summary:	Moo - Minimalist Object Orientation (with Moose compatibility)
 Summary(pl.UTF-8):	Moo - Minimalist Object Orientation (minimalna obiektowość, zgodna z Moose)
 Name:		perl-Moo
