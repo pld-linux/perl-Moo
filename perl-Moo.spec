@@ -6,13 +6,13 @@
 Summary:	Moo - Minimalist Object Orientation (with Moose compatibility)
 Summary(pl.UTF-8):	Moo - Minimalist Object Orientation (minimalna obiektowość, zgodna z Moose)
 Name:		perl-Moo
-Version:	2.003006
+Version:	2.004000
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/H/HA/HAARG/Moo-%{version}.tar.gz
-# Source0-md5:	53af7e7849492a8e3994ee379d12e348
+# Source0-md5:	e542104553d616b15631b5c66ccee904
 URL:		https://metacpan.org/release/Moo
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
