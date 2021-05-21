@@ -6,32 +6,34 @@
 Summary:	Moo - Minimalist Object Orientation (with Moose compatibility)
 Summary(pl.UTF-8):	Moo - Minimalist Object Orientation (minimalna obiektowość, zgodna z Moose)
 Name:		perl-Moo
-Version:	2.004004
+Version:	2.005004
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/H/HA/HAARG/Moo-%{version}.tar.gz
-# Source0-md5:	51f3732e043a1e856ab6cdc260d2814c
+# Source0-md5:	49ecf491b49b9b200e8a5dfd1a42b480
 URL:		https://metacpan.org/release/Moo
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
 BuildRequires:	perl(Exporter) >= 5.57
 BuildRequires:	perl-Class-Method-Modifiers >= 2.11
 BuildRequires:	perl-Devel-GlobalDestruction >= 0.11
 BuildRequires:	perl-Module-Runtime >= 0.014
-BuildRequires:	perl-Role-Tiny >= 2
-BuildRequires:	perl-Scalar-List-Utils
-BuildRequires:	perl-Sub-Quote >= 2.003001
+BuildRequires:	perl-Role-Tiny >= 2.002003
+BuildRequires:	perl-Scalar-List-Utils >= 1.00
+BuildRequires:	perl-Sub-Quote >= 2.006006
 BuildRequires:	perl-Test-Fatal >= 0.003
 BuildRequires:	perl-Test-Simple >= 0.94
 BuildRequires:	perl-strictures >= 2
 %endif
 Requires:	perl-Devel-GlobalDestruction >= 0.11
 Requires:	perl-Module-Runtime >= 0.014
-Requires:	perl-Role-Tiny >= 2
-Requires:	perl-Sub-Quote >= 2.003001
+Requires:	perl-Role-Tiny >= 2.002003
+Requires:	perl-Scalar-List-Utils >= 1.00
+Requires:	perl-Sub-Quote >= 2.006006
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
