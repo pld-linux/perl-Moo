@@ -1,19 +1,19 @@
 #
 # Conditional build:
-%bcond_without	tests		# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	Moo
 Summary:	Moo - Minimalist Object Orientation (with Moose compatibility)
 Summary(pl.UTF-8):	Moo - Minimalist Object Orientation (minimalna obiektowość, zgodna z Moose)
 Name:		perl-Moo
-Version:	2.005004
+Version:	2.005005
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/H/HA/HAARG/Moo-%{version}.tar.gz
-# Source0-md5:	49ecf491b49b9b200e8a5dfd1a42b480
-URL:		https://metacpan.org/release/Moo
+Source0:	https://www.cpan.org/modules/by-authors/id/H/HA/HAARG/Moo-%{version}.tar.gz
+# Source0-md5:	259530e5ea37a1bf968f6cf18a25db86
+URL:		https://metacpan.org/dist/Moo
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	rpmbuild(macros) >= 1.745
